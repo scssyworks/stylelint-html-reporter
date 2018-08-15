@@ -6,7 +6,7 @@ HTML reporter for stylelint
 npm install --save-dev gulp-stylelint stylelint-html-reporter
 ```
 
-# How to use it with gulp-stylelint?
+# Usage
 ```js
 const gulp = require('gulp');
  
@@ -29,7 +29,7 @@ gulp.task('lint-css', function lintCssTask() {
 
 # Options
 
-<b>filename</b>(Optional)
+<b>filename</b> - (Optional) - 
 Name of file to be generated
 
 ```js

@@ -1,0 +1,29 @@
+{
+  "name": "stylelint-html-reporter",
+  "version": "0.0.1",
+  "description": "HTML reporter for stylelint",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scssyworks/stylelint-html-reporter.git"
+  },
+  "keywords": [
+    "stylelint",
+    "reporter",
+    "html",
+    "html-reporter",
+    "stylelint-html-reporter",
+    "gulp",
+    "gulp-stylelint"
+  ],
+  "author": "scssyworks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scssyworks/stylelint-html-reporter/issues"
+  },
+  "homepage": "https://github.com/scssyworks/stylelint-html-reporter#readme",
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "stylelint-formatter-pretty": "^1.0.3"
+  }
+}

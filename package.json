@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/scssyworks/stylelint-html-reporter#readme",
   "dependencies": {
-    "fs-extra": "^7.0.0",
-    "stylelint-formatter-pretty": "^1.0.3"
+    "fs-extra": "^8.1.0",
+    "stylelint-formatter-pretty": "^1.1.3"
   }
 }

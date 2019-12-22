@@ -1,6 +1,6 @@
 {
   "name": "stylelint-html-reporter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HTML reporter for stylelint",
   "main": "index.js",
   "repository": {

@@ -1,3 +1,5 @@
+const getFileName = require('./getFileName.js');
+
 module.exports = function (results) {
     if (Array.isArray(results)) {
         let baseHtml = `
@@ -208,7 +210,7 @@ module.exports = function (results) {
         <ul class="details">
         ${detailedList.map(errorObj => `
         <li>
-        <div class="error-summary ${errorObj.errored ? 'errored' : 'valid'} clearfix"><span class="filename" title="${errorObj.filesource}">${errorObj.filename}</span><span class="error-count">Errors: <span>${errorObj.errors.error}</span></span><span class="warning-count">Warnings: <span>${errorObj.errors.warning}</span></span></div>
+        <div class="error-summary ${errorObj.errored ? 'errored' : 'valid'} clearfix"><span class="filename" title="${errorObj.filesource}">${errorObj.filename || getFileName(errorObj.filesource)}</span><span class="error-count">Errors: <span>${errorObj.errors.error}</span></span><span class="warning-count">Warnings: <span>${errorObj.errors.warning}</span></span></div>
         ${errorObj.warnings.length ? `<div class="error-list clearfix hidden">
             ${errorObj.warnings.map(warning => `
             <div class="${warning.severity} clearfix">

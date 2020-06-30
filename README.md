@@ -7,6 +7,29 @@ npm install --save-dev gulp-stylelint stylelint-html-reporter
 ```
 
 # Usage
+
+## Standalone
+Stylelint HTML reporter can be used as a standalone formatter. You can write a custom formatter as follows:
+
+<b>myCustomFormatter.js</b>
+
+```js
+const stylelintReporter = require('stylelint-html-reporter');
+const reporter = stylelintReporter(/* Pass options object here */);
+
+/**
+ * @type {import('stylelint').Formatter} 
+ */
+module.exports = reporter;
+```
+
+You can use it as a custom formatter:
+
+```sh
+stylelint "*.css" --custom-formatter ./myCustomFormatter.js
+```
+
+## With Gulp
 ```js
 const gulp = require('gulp');
  

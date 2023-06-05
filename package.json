@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/scssyworks/stylelint-html-reporter.git"
   },
+  "scripts": {
+    "sanitize": "rome check ./ && rome format ./ --write"
+  },
   "keywords": [
     "stylelint",
     "reporter",
@@ -23,7 +26,10 @@
   },
   "homepage": "https://github.com/scssyworks/stylelint-html-reporter#readme",
   "dependencies": {
-    "fs-extra": "^10.1.0",
-    "stylelint-formatter-pretty": "^3.1.0"
+    "fs-extra": "^11.1.1",
+    "stylelint-formatter-pretty": "^3.2.0"
+  },
+  "devDependencies": {
+    "rome": "^12.1.3"
   }
 }
